@@ -1,0 +1,4 @@
+SELECT t.id,t.firstname,t.lastname,t.gender,t.subject FROM pupils p
+    INNER JOIN classes c ON c.pupil_id = p.id
+    INNER JOIN teachers t ON c.teacher_id = t.id
+    WHERE p.firstname = "გიორგი";
